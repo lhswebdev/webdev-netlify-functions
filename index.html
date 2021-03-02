@@ -5,4 +5,9 @@ async function doRequest() {
     const data = await response.json();
     console.log(data.text);
 }
+async function getParticipants() {
+    const response = await fetch('/.netlify/functions/getParticipants');
+    const data = await response.json();
+    console.log(data.participants);
+}
 </script>
